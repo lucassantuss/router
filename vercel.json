@@ -1,17 +1,29 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [
+  "redirects": [
     {
       "source": "/dev",
-      "destination": "https://lucassantuss-dev.vercel.app"
+      "destination": "/dev/",
+      "permanent": false
+    },
+    {
+      "source": "/run",
+      "destination": "/run/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/dev/",
+      "destination": "https://lucassantuss-dev.vercel.app/"
     },
     {
       "source": "/dev/:path*",
       "destination": "https://lucassantuss-dev.vercel.app/:path*"
     },
     {
-      "source": "/run",
-      "destination": "https://lucassantuss-run.vercel.app"
+      "source": "/run/",
+      "destination": "https://lucassantuss-run.vercel.app/"
     },
     {
       "source": "/run/:path*",
