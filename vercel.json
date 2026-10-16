@@ -1,0 +1,21 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/dev",
+      "destination": "https://lucassantuss-dev.vercel.app"
+    },
+    {
+      "source": "/dev/:path*",
+      "destination": "https://lucassantuss-dev.vercel.app/:path*"
+    },
+    {
+      "source": "/run",
+      "destination": "https://lucassantuss-run.vercel.app"
+    },
+    {
+      "source": "/run/:path*",
+      "destination": "https://lucassantuss-run.vercel.app/:path*"
+    }
+  ]
+}
